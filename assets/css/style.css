@@ -14,20 +14,17 @@ body {
     height: 100%;
     display: grid;
     place-items: center;
-    max-width: 450px;
+    max-width: 550px;
     margin: 0 auto;
-    overflow: hidden;
     padding: 10px;
     color: white;
 }
 
 .content {
-    width: fit-content;
+    width: 100%;
     margin: 0 auto;
     padding: 15px;
-    border-radius: 12px;
     background: black;
-    box-shadow: 0 0 2px rgba(172, 172, 172, 0.3);
 }
 
 .screen-result {
@@ -46,7 +43,8 @@ body {
 .grid-container {
     display: grid;
     gap: 10px 10px;
-    grid-template-columns: 55px 55px 55px 55px;
+    place-content: center;
+    grid-template-columns: 65px 65px 65px 65px;
 }
 
 .grid-item {
@@ -60,8 +58,8 @@ body {
     line-height: 21px;
     letter-spacing: -0.05em;
     text-align: center;
-    border-radius: 55px;
-    height: 55px;
+    border-radius: 65px;
+    height: 65px;
     -webkit-user-select: none; /* Safari */
     -ms-user-select: none; /* IE 10 and IE 11 */
     user-select: none; /* Standard syntax */
@@ -79,4 +77,12 @@ body {
 .grid-two-column {
     grid-column-start: 1;
     grid-column-end: 3;
+}
+
+@media screen and (min-width: 768px) {
+    .content {
+        width: fit-content;
+        border-radius: 12px;
+        box-shadow: 0 0 2px rgba(172, 172, 172, 0.3);
+    }
 }
