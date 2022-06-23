@@ -6,7 +6,7 @@
 }
 
 body {
-    background: rgba(0, 0, 0, .95);
+    background: black;
 }
 
 .container {
@@ -80,6 +80,10 @@ body {
 }
 
 @media screen and (min-width: 768px) {
+    body {
+        background: rgba(0, 0, 0, .95);
+    }
+
     .content {
         width: fit-content;
         border-radius: 12px;
