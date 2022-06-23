@@ -65,6 +65,10 @@ body {
     user-select: none; /* Standard syntax */
 }
 
+.grid-item:active {
+    opacity: 0.8;
+}
+
 .item-gray {
     background-color: rgb(160, 160, 160);
     color: black;
